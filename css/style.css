@@ -1,0 +1,260 @@
+* {
+  font-family: "Fraunces", serif;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+:root {
+  --text-color: #211f1f;
+  --text-color-gray: #344054;
+  --text-color-description: #667085;
+  --title-color: #272d37;
+  --bg-color: #100d0b;
+  --bg-color-gray: #f2f4f7;
+}
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3.2rem 0;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+}
+.header-right ul {
+  display: flex;
+  gap: 30px;
+  margin-right: 20px;
+}
+.header-right-link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--text-color);
+}
+.bars {
+  display: none;
+  cursor: pointer;
+  border: none;
+  font-size: 1.2rem;
+  background-color: white;
+  padding-right: 20px;
+}
+.button-white,
+.button-black {
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.4rem;
+  border-radius: 200px;
+  padding: 12px 20px;
+  margin-right: 10px;
+}
+.button-white {
+  background-color: white;
+  border: solid 1px var(--bg-color);
+  color: var(--bg-color);
+}
+.button-black {
+  color: white;
+  background-color: var(--bg-color);
+}
+/* Banner */
+.banner {
+  text-align: center;
+  margin: 50px 50px 90px;
+}
+.button-gray {
+  cursor: pointer;
+  border: none;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: var(--text-color-gray);
+  background-color: var(--bg-color-gray);
+  border-radius: 16px;
+  padding: 4px 12px;
+}
+.title,
+.description {
+  margin: 10px 0px 20px;
+}
+.title {
+  font-weight: 300;
+  font-size: 5rem;
+  color: var(--title-color);
+  line-height: 6rem;
+}
+.description {
+  font-size: 1.5rem;
+  color: var(--text-color-description);
+  line-height: 2rem;
+}
+/* Page-yellow */
+.page-yellow {
+  background-color: #fed501;
+}
+.content-yellow {
+  text-align: center;
+  padding: 50px 100px;
+}
+.page-yellow .description {
+  color: var(--text-color);
+}
+/* Meet Reiki */
+.meet-reiki {
+  margin-bottom: 90px;
+}
+.content-reiki {
+  text-align: center;
+}
+.content-reiki .description {
+  color: var(--text-color);
+}
+/* Checkout Our Free Resources */
+
+/* Checkout-heading */
+.checkout-heading .title {
+  text-align: center;
+  margin: 50px 0px;
+}
+.checkout-heading .row {
+  text-align: center;
+}
+.checkout-heading h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 20px 0px;
+}
+.checkout-heading .description {
+  color: var(--text-color);
+}
+/* Checkout-middle */
+.checkout-middle {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  margin: 90px 50px;
+}
+.checkout-middle i {
+  font-size: 4.8rem;
+}
+.checkout-middle .title {
+  font-size: 3.6rem;
+  line-height: 4.4rem;
+}
+/* Checkout-end */
+.checkout-end {
+  text-align: center;
+  margin: 0px 20px 90px;
+}
+.checkout-end .title {
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+}
+/* Page-black */
+.page-black .row {
+  background-color: var(--text-color);
+  color: white;
+  align-items: start;
+  padding: 60px 30px;
+  margin-bottom: 90px;
+  gap: 20px;
+}
+.page-black h1 {
+  font-size: 4rem;
+}
+.page-black .description {
+  color: white;
+  font-size: 1.3rem;
+}
+.page-black button {
+  border-radius: 200px;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 1.4rem;
+  background-color: var(--text-color);
+  border: solid 1px white;
+  color: white;
+}
+/* Invite your friends */
+.invite {
+  text-align: center;
+  margin-bottom: 90px;
+}
+.invite .description {
+  color: var(--text-color);
+  padding-bottom: 20px;
+}
+/* Footer */
+.footer {
+  background-color: #211f1f;
+  padding: 60px 90px;
+}
+.content-footer ul {
+  display: flex;
+  gap: 30px;
+  margin: 30px 0px 50px;
+}
+.content-footer a {
+  color: white;
+  text-decoration: none;
+}
+.divide {
+  border-top: 1px solid #475467;
+}
+.divide-content {
+  display: flex;
+  justify-content: space-between;
+}
+.divide .description {
+  color: white;
+  padding-top: 20px;
+}
+.divide ul {
+  display: flex;
+  gap: 28px;
+  font-size: 1.4rem;
+  margin: 30px;
+}
+/* Large screens and desktop */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .container {
+    max-width: 900px;
+  }
+}
+/* Laptop and small screen */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    max-width: 900px;
+    padding: 0 10px;
+  }
+  .bars {
+    display: inline-block;
+  }
+  .header-right ul {
+    display: none;
+  }
+  .title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .checkout-middle .title,
+  .checkout-end .title {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+  }
+  .checkout-end .description {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  .page-black h1 {
+    font-size: 3rem;
+  }
+}
+/* Tuần này em nhiều bài quá nên làm tới đây thoii ạ */
