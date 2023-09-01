@@ -264,7 +264,6 @@ html {
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .container {
     max-width: 900px;
-    padding: 0 10px;
   }
   .bars {
     display: inline-block;
@@ -272,7 +271,7 @@ html {
   }
   .button-black,
   .button-white {
-    padding: 10px 14px;
+    padding: 10px 12px;
     font-size: 1rem;
     /* margin-right: 5px; */
   }
