@@ -21,7 +21,8 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 3.2rem 20px;
+  margin: 3.2rem 0px;
+  padding: 0 20px;
 }
 .header-right,
 .header-button {
@@ -31,7 +32,7 @@ html {
 .header-right ul {
   display: flex;
   gap: 30px;
-  margin-right: 20px;
+  padding-right: 20px;
 }
 .header-right-link {
   text-decoration: none;
@@ -45,7 +46,7 @@ html {
   border: none;
   font-size: 1.2rem;
   background-color: white;
-  padding-right: 20px;
+  padding-right: 10px;
 }
 .button-white,
 .button-black {
@@ -55,7 +56,7 @@ html {
   font-size: 1.6rem;
   border-radius: 200px;
   padding: 12px 16px;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 .button-white {
   background-color: white;
@@ -103,17 +104,19 @@ html {
 }
 .content-yellow {
   text-align: center;
-  padding: 40px;
+  padding: 40px 20px;
 }
 .page-yellow .description {
   color: var(--text-color);
 }
 /* Meet Reiki */
 .meet-reiki {
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 }
 .content-reiki {
   text-align: center;
+  padding: 0 20px;
+  /* width: 50%; */
 }
 .content-reiki .description .button-black {
   font-size: 1.3rem;
@@ -165,7 +168,7 @@ html {
   background-color: var(--text-color);
   color: white;
   align-items: start;
-  padding: 60px 30px;
+  padding: 60px 20px;
   margin-bottom: 90px;
   gap: 20px;
 }
@@ -273,7 +276,7 @@ html {
   .button-white {
     padding: 10px 14px;
     font-size: 1rem;
-    margin-right: 5px;
+    /* margin-right: 5px; */
   }
   .header-left img {
     max-width: 165px;

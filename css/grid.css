@@ -11,11 +11,8 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin: -16px;
+  /* margin: -16px; */
   /* thuộc tính âm chỉ dùng đc ở margin, dùng âm để thụt dô trong */
-}
-.col {
-  padding: 16px;
 }
 .col-12 {
   flex: 0 0 100%;
